@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "WA6K3XF5W9.com.voyagr.app",
+        "paths": ["/invite/*"]
+      }
+    ]
+  }
+}

@@ -19,7 +19,7 @@
 <body>
 
 <div class="top-banner">
-  Now in App Store Review &mdash; <a href="#beta">apply for early access</a>
+  Now in App Store Review &mdash; <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access">apply for early access</a>
 </div>
 
 <nav>
@@ -30,7 +30,7 @@
       <a href="#pricing" class="nav-link-hide">Pricing</a>
       <a href="faq.html" class="nav-link-hide">FAQ</a>
       <a href="support.html" class="nav-link-hide">Support</a>
-      <a href="#beta" class="nav-cta">Get Early Access</a>
+      <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access" class="nav-cta">Get Early Access</a>
     </div>
   </div>
 </nav>
@@ -42,13 +42,7 @@
   <p>Bookings, entry requirements, currency, and emergency info &mdash; all offline. Built for trips that cross borders.</p>
 
   <div class="hero-form" id="beta">
-    <form id="beta-form-hero" action="https://formspree.io/f/xzdooqnq" method="POST">
-      <input type="hidden" name="_subject" value="Roam Wyld Beta Access Request" />
-      <input type="hidden" name="source" value="hero" />
-      <input type="email" name="email" placeholder="your@email.com" required class="form-input" />
-      <button type="submit" class="form-btn">Apply for Beta</button>
-    </form>
-    <p id="hero-form-success" class="form-success" style="display:none;">You're on the list. We'll reach out when beta opens.</p>
+    <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access" class="btn-beta">Apply for Beta Access</a>
     <span class="hero-meta">iOS &middot; Pro from $4.99/mo &middot; 14-day free trial</span>
   </div>
 
@@ -148,7 +142,7 @@
           <li><span class="check">&#10003;</span> Flight validation</li>
           <li><span class="check">&#10003;</span> Offline access</li>
         </ul>
-        <a href="#beta" class="pricing-btn pricing-btn-secondary">Apply for Beta</a>
+        <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access" class="pricing-btn pricing-btn-secondary">Apply for Beta</a>
       </div>
       <div class="pricing-card featured">
         <div class="pricing-badge">Most Popular</div>
@@ -161,7 +155,7 @@
           <li><span class="check">&#10003;</span> Unlimited trips</li>
           <li><span class="check">&#10003;</span> Priority support</li>
         </ul>
-        <a href="#beta" class="pricing-btn pricing-btn-primary">Apply for Beta</a>
+        <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access" class="pricing-btn pricing-btn-primary">Apply for Beta</a>
         <p class="pricing-trial">14-day free trial included</p>
       </div>
     </div>
@@ -212,13 +206,7 @@
 <div class="cta-band">
   <h2>Beta access opening soon</h2>
   <p>Leave your email and we'll reach out directly when the app is live.</p>
-  <form id="beta-form-cta" action="https://formspree.io/f/xzdooqnq" method="POST" class="cta-form">
-    <input type="hidden" name="_subject" value="Roam Wyld Beta Access Request" />
-    <input type="hidden" name="source" value="cta-band" />
-    <input type="email" name="email" placeholder="your@email.com" required class="form-input form-input-dark" />
-    <button type="submit" class="form-btn form-btn-white">Apply for Beta</button>
-  </form>
-  <p id="cta-form-success" class="form-success form-success-light" style="display:none;">You're on the list. We'll be in touch.</p>
+  <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access" class="btn-beta btn-beta-white">Apply for Beta Access</a>
 </div>
 
 <footer>
@@ -259,37 +247,6 @@
   </div>
 </footer>
 
-<script>
-function handleForm(formId, successId) {
-  var form = document.getElementById(formId);
-  if (!form) return;
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    var btn = form.querySelector('button');
-    btn.textContent = 'Submitting...';
-    btn.disabled = true;
-    try {
-      var res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-      if (res.ok) {
-        form.style.display = 'none';
-        document.getElementById(successId).style.display = 'block';
-      } else {
-        btn.textContent = 'Try again';
-        btn.disabled = false;
-      }
-    } catch (err) {
-      btn.textContent = 'Try again';
-      btn.disabled = false;
-    }
-  });
-}
-handleForm('beta-form-hero', 'hero-form-success');
-handleForm('beta-form-cta', 'cta-form-success');
-</script>
 
 </body>
 </html>

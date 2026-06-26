@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Entry Requirements App — Offline, Per Passport</title>
+  <meta name="description" content="Know exactly what you need to enter every country on your trip — visa rules, passport validity, and entry checklists filtered to your passport nationality. Available offline." />
+  <meta name="google-site-verification" content="FwUJiEMPP1fMOQ4BFvkXwyjw40jZPFWo5KTjLIu2YRo" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <style>
+    .prose { max-width: 720px; margin: 0 auto; }
+    .prose h2 { font-size: 24px; font-weight: 800; margin: 40px 0 16px; color: var(--text); }
+    .prose h3 { font-size: 18px; font-weight: 700; margin: 28px 0 10px; color: var(--text); }
+    .prose p { font-size: 16px; color: #374151; line-height: 1.8; margin-bottom: 16px; }
+    .prose ul { padding-left: 20px; margin-bottom: 16px; }
+    .prose ul li { font-size: 16px; color: #374151; line-height: 1.8; margin-bottom: 6px; }
+    .prose strong { color: var(--text); }
+    .example-box { background: var(--primary-light); border-left: 4px solid var(--primary); border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 24px 0; }
+    .example-box p { margin: 0; color: var(--primary-dark); }
+    .warning-box { background: #FEF9C3; border-left: 4px solid #CA8A04; border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 24px 0; }
+    .warning-box p { margin: 0; color: #713F12; }
+    .cta-inline { display: inline-block; background: var(--primary); color: #fff !important; padding: 14px 28px; border-radius: 10px; font-weight: 700; font-size: 16px; text-decoration: none !important; margin: 8px 0; }
+    .cta-inline:hover { background: var(--primary-dark); }
+    .passport-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0; }
+    .passport-card { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .passport-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .passport-card p { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<div class="top-banner">
+  Now in App Store Review &mdash; <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access">apply for early access</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="icon.png" alt="" class="nav-icon" style="width:28px;height:28px;border-radius:6px;flex-shrink:0;" />ROAM WYLD</a>
+    <div class="nav-links">
+      <a href="/#features" class="nav-link-hide">Features</a>
+      <a href="/#pricing" class="nav-link-hide">Pricing</a>
+      <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access" class="nav-cta">Get Early Access</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>International Entry Requirements</h1>
+  <p>Visa rules, passport validity requirements, and entry checklists for every country on your trip — filtered to your passport, available offline.</p>
+</div>
+
+<section>
+  <div class="prose">
+
+    <h2>Why Entry Requirements Are Complicated</h2>
+    <p>
+      Entry requirements are not universal — they depend entirely on your passport. A US citizen and a UK citizen traveling together to Japan face the same rules, but those same two travelers heading to Brazil may face completely different visa requirements. And rules change: countries update visa policies, add electronic travel authorizations, and change passport validity minimums with little notice.
+    </p>
+    <p>
+      The consequences of getting entry requirements wrong are severe. Airlines can deny boarding if your passport doesn't meet the destination's minimum validity requirements. Border officers can deny entry if you don't have the right documents. And if something goes wrong mid-trip — transiting through a country you didn't plan to enter deeply — being unable to look up requirements quickly matters.
+    </p>
+
+    <div class="warning-box">
+      <p><strong>Always verify entry requirements with official government sources before travel.</strong> Requirements change and Roam Wyld's data, while regularly updated, should be treated as a reference and starting point — not a legal guarantee. For the most current information, check your government's official travel advisory (travel.state.gov for US travelers, gov.uk/foreign-travel-advice for UK travelers).</p>
+    </div>
+
+    <h2>What Entry Requirements Cover</h2>
+    <p>Entry requirements typically include several distinct categories, all of which matter for international travel:</p>
+    <ul>
+      <li><strong>Visa requirements:</strong> Do you need a visa, and if so, what type? Tourist visa, eVisa, visa on arrival, or visa-free entry?</li>
+      <li><strong>Passport validity:</strong> Most countries require your passport to be valid for at least 6 months beyond your intended stay. Some require 3 months. A few countries require only that it's valid for the duration of your stay.</li>
+      <li><strong>Maximum stay:</strong> Even without a visa, most countries limit how long you can stay on a single entry as a tourist (commonly 30, 60, or 90 days).</li>
+      <li><strong>eTA / travel authorization:</strong> Some countries (Canada, Australia, New Zealand, and soon the EU with ETIAS) require an electronic travel authorization even for visa-free entry. These are usually quick and inexpensive but easy to forget.</li>
+      <li><strong>Blank pages:</strong> Many countries require a minimum number of blank pages in your passport for stamps.</li>
+      <li><strong>Health requirements:</strong> Some countries require vaccinations (yellow fever is the most common requirement, especially in parts of Africa and South America).</li>
+    </ul>
+
+    <h2>Entry Requirements by Passport</h2>
+    <p>Roam Wyld supports entry requirements for five major passport nationalities, with rules specific to each:</p>
+
+    <div class="passport-grid">
+      <div class="passport-card">
+        <h4>US Passport</h4>
+        <p>Visa-free or on-arrival access to 186 countries. Strong for Europe, Asia-Pacific, and most of the Americas. Requires eTA for Canada, Australia, and New Zealand.</p>
+      </div>
+      <div class="passport-card">
+        <h4>UK Passport</h4>
+        <p>Visa-free or on-arrival access to 188 countries. Post-Brexit, UK citizens now need to track Schengen days like other non-EU nationals (90/180 days).</p>
+      </div>
+      <div class="passport-card">
+        <h4>Australian Passport</h4>
+        <p>Visa-free or on-arrival access to 185 countries. Strong across Asia-Pacific. US entry requires ESTA. EU entry will require ETIAS from late 2026.</p>
+      </div>
+      <div class="passport-card">
+        <h4>Canadian Passport</h4>
+        <p>Visa-free or on-arrival access to 185 countries. Similar profile to Australian passport. Requires eTA for flights to or connecting through Canada (even for Canadians).</p>
+      </div>
+      <div class="passport-card">
+        <h4>EU Passport</h4>
+        <p>Full freedom of movement within the EU. Visa-free access to 190+ countries. Strongest travel document in the world by most rankings.</p>
+      </div>
+    </div>
+
+    <h2>The Problem With Most Travel Apps</h2>
+    <p>
+      Most travel apps that include entry requirements have two critical problems: they require an internet connection to display the information, and they show generic rules that aren't filtered to your specific passport.
+    </p>
+    <p>
+      Generic rules are misleading. "Japan: 90 days visa-free" is true for US and UK passport holders but not for all nationalities. An app that shows you the most common rule without knowing your passport can give you false confidence.
+    </p>
+    <p>
+      And the internet requirement is a real problem at the exact moment you most need this information: clearing customs in a foreign country, often without a working SIM card, sometimes in an area with no WiFi.
+    </p>
+
+    <h2>How Roam Wyld Handles Entry Requirements</h2>
+    <p>
+      When you create a trip in Roam Wyld, you set your passport nationality once. The app then pulls entry requirements for every destination on your trip, filtered specifically to your passport. US and UK travelers to the same destinations see the rules that apply to them — not a generic average.
+    </p>
+    <p>
+      All entry requirement data is cached locally when you first view it. That means it is available in airplane mode, on a cruise ship, at a border crossing with no data signal — anywhere. You do not need internet access to see the entry requirements for a country you have already viewed in the app.
+    </p>
+    <p>
+      Roam Wyld covers 50+ destinations including the most commonly visited countries across Europe, Asia, Southeast Asia, the Americas, and Australia/New Zealand. Coverage expands continuously.
+    </p>
+
+    <p style="margin-top: 32px;">
+      <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access" class="cta-inline">Get Early Access to Roam Wyld</a>
+    </p>
+    <p style="font-size: 13px; color: var(--text-muted);">iOS &middot; Entry requirements free for all users &middot; Now in App Store review</p>
+
+    <h2>Coming in Late 2026: ETIAS</h2>
+    <p>
+      ETIAS (European Travel Information and Authorisation System) is the EU's pre-travel registration system, similar to the US ESTA or Australia's ETA. It is expected to launch in late 2026 and will apply to travelers from 59 visa-exempt nationalities — including the US, UK, Australia, and Canada — entering the Schengen Area.
+    </p>
+    <p>
+      ETIAS is not a visa. It is a €7 online registration that takes a few minutes, is valid for 3 years, and must be obtained before you board. It does not change the 90/180-day Schengen limit — it is an additional pre-travel step.
+    </p>
+    <p>
+      Roam Wyld will add ETIAS reminders and requirements to entry requirement data when the system launches.
+    </p>
+
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Know before you go — even without internet</h2>
+  <p>Entry requirements for your trip, filtered to your passport, cached offline.</p>
+  <a href="mailto:support@roamwyld.app?subject=Roam%20Wyld%20Beta%20Access" class="btn-beta btn-beta-white">Apply for Early Access</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="display:flex;align-items:center;gap:8px;"><img src="icon.png" alt="" style="width:22px;height:22px;border-radius:5px;" />ROAM WYLD</div>
+        <p>Multi-country trip management for curious travelers.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/schengen.html">Schengen 90/180 Rule</a></li>
+          <li><a href="/entry-requirements.html">Entry Requirements</a></li>
+          <li><a href="/offline-travel-app.html">Offline Travel App</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Roam Wyld. All rights reserved.</span>
+      <span>Made for travelers who go further.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

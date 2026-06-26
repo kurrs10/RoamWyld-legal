@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roam Wyld — Your Adventure, Organized</title>
-  <meta name="description" content="Plan multi-country trips with AI-powered transit directions, visa requirements, Gmail booking import, and offline-first travel tools." />
-  <meta property="og:title" content="Roam Wyld — Your Adventure, Organized" />
-  <meta property="og:description" content="AI transit directions, visa requirements, Gmail import, and offline maps. Everything you need for your next adventure." />
+  <title>Roam Wyld — Your Trip, In One Place</title>
+  <meta name="description" content="Manage multi-country trips with entry requirements, Gmail booking import, currency converter, and offline access. Now in App Store review." />
+  <meta property="og:title" content="Roam Wyld — Your Trip, In One Place" />
+  <meta property="og:description" content="Entry requirements, Gmail booking import, offline access, and emergency info. Made for trips that cross borders." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://roamwyld.app" />
+  <meta property="og:image" content="https://roamwyld.app/ss-02.png" />
   <link rel="stylesheet" href="style.css" />
   <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+" (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId setPersonPropertiesForFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||(window.posthog=[]));
@@ -17,8 +18,8 @@
 </head>
 <body>
 
-<div style="background:#1a2e1a;color:#e8f5e8;text-align:center;padding:10px 16px;font-size:14px;font-weight:500;letter-spacing:0.01em;">
-  Coming soon to the App Store — <strong>TestFlight beta launching June 2026</strong>
+<div class="top-banner">
+  Now in App Store Review &mdash; <a href="#beta">apply for early access</a>
 </div>
 
 <nav>
@@ -29,73 +30,76 @@
       <a href="#pricing" class="nav-link-hide">Pricing</a>
       <a href="faq.html" class="nav-link-hide">FAQ</a>
       <a href="support.html" class="nav-link-hide">Support</a>
-      <span class="nav-cta" style="opacity:0.5;cursor:default;">Coming Soon</span>
+      <a href="#beta" class="nav-cta">Get Early Access</a>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-badge">iOS App · Coming June 2026</div>
-  <h1>Your adventure,<br><span>organized.</span></h1>
-  <p>Plan multi-country trips with AI-powered transit directions, visa requirements, and seamless booking management — all available offline.</p>
-  <div class="hero-actions">
-    <a href="mailto:support@roamwyld.app?subject=Notify me when Roam Wyld launches" class="btn-appstore" id="download">
-      <span class="btn-appstore-icon">🍎</span>
-      <span class="btn-appstore-text">
-        <span class="btn-appstore-sub">Notify me when it's live on the</span>
-        App Store
-      </span>
-    </a>
-    <span class="hero-meta">TestFlight beta launching June 2026 · Pro from $4.99/mo · 14-day trial</span>
+  <div class="hero-badge">Now in App Store Review</div>
+  <h1>Your trip,<br><span>in one place.</span></h1>
+  <p>Bookings, entry requirements, currency, and emergency info &mdash; all offline. Built for trips that cross borders.</p>
+
+  <div class="hero-form" id="beta">
+    <form id="beta-form-hero" action="https://formspree.io/f/xzdooqnq" method="POST">
+      <input type="hidden" name="_subject" value="Roam Wyld Beta Access Request" />
+      <input type="hidden" name="source" value="hero" />
+      <input type="email" name="email" placeholder="your@email.com" required class="form-input" />
+      <button type="submit" class="form-btn">Apply for Beta</button>
+    </form>
+    <p id="hero-form-success" class="form-success" style="display:none;">You're on the list. We'll reach out when beta opens.</p>
+    <span class="hero-meta">iOS &middot; Pro from $4.99/mo &middot; 14-day free trial</span>
   </div>
-  <div class="hero-screenshot">
-    <span class="hero-screenshot-placeholder">App screenshots coming soon</span>
+
+  <div class="screenshots-strip">
+    <div class="screenshot-phone screenshot-secondary">
+      <img src="ss-03.png" alt="Entry requirements for Japan" />
+    </div>
+    <div class="screenshot-phone screenshot-primary">
+      <img src="ss-02.png" alt="Discover screen — Tokyo suggestions" />
+    </div>
+    <div class="screenshot-phone screenshot-secondary">
+      <img src="ss-04.png" alt="Currency converter" />
+    </div>
   </div>
 </section>
 
 <!-- FEATURES -->
 <section class="features-bg" id="features">
   <div class="section-inner">
-    <p class="section-label">Everything you need</p>
-    <h2 class="section-title">Built for real travelers</h2>
-    <p class="section-sub">Not another itinerary builder. Roam Wyld gives you the tools that actually matter when you're moving between countries.</p>
+    <h2 class="section-title">What's inside</h2>
+    <p class="section-sub">The things that actually matter when you're moving between countries.</p>
 
     <div class="features-grid">
       <div class="feature-card">
-        <span class="feature-icon">🗺️</span>
-        <h3>AI Transit Directions</h3>
-        <p>Step-by-step routes between every destination. Train, bus, metro, ferry — explained in plain English with estimated costs and local tips.</p>
-        <span class="feature-badge badge-pro">Pro</span>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon">✉️</span>
         <h3>Gmail Import</h3>
-        <p>Connect your Gmail and Roam Wyld automatically finds your flight, hotel, and activity confirmations. Add them to your trip in one tap.</p>
+        <p>Connect Gmail and Roam Wyld finds your flight, hotel, and activity confirmations automatically. Add any of them to your trip in one tap.</p>
         <span class="feature-badge badge-pro">Pro</span>
       </div>
       <div class="feature-card">
-        <span class="feature-icon">🛂</span>
         <h3>Entry Requirements</h3>
-        <p>Visa rules, passport validity requirements, and entry checklists for 50+ destinations — based on your actual passport nationality.</p>
+        <p>Visa rules, passport validity, and entry checklists for 50+ destinations &mdash; filtered to your actual passport nationality. Always available offline.</p>
         <span class="feature-badge badge-free">Free</span>
       </div>
       <div class="feature-card">
-        <span class="feature-icon">📍</span>
         <h3>Offline-First</h3>
-        <p>Your trips, bookings, entry requirements, and emergency info are always available — even without cell service or Wi-Fi.</p>
+        <p>Your itinerary, bookings, entry requirements, and emergency info are cached locally. Works in airplane mode, on a cruise ship, anywhere without service.</p>
         <span class="feature-badge badge-free">Free</span>
       </div>
       <div class="feature-card">
-        <span class="feature-icon">💱</span>
         <h3>Currency Converter</h3>
-        <p>Real-time exchange rates with a built-in converter. Switch your base currency and see costs in your home currency instantly.</p>
+        <p>Real-time exchange rates with a converter built in. Switch your base currency and see what everything actually costs you.</p>
         <span class="feature-badge badge-free">Free</span>
       </div>
       <div class="feature-card">
-        <span class="feature-icon">🆘</span>
         <h3>Emergency Info</h3>
-        <p>Local emergency numbers, ambulance, police, fire — for every country you're visiting. Available offline, always one tap away.</p>
+        <p>Local emergency numbers &mdash; police, ambulance, fire &mdash; for every country on your trip. One tap away, always offline.</p>
+        <span class="feature-badge badge-free">Free</span>
+      </div>
+      <div class="feature-card">
+        <h3>Booking Management</h3>
+        <p>Add flights, hotels, and activities manually or via Gmail. Flight numbers are validated against live airline data before you save.</p>
         <span class="feature-badge badge-free">Free</span>
       </div>
     </div>
@@ -105,23 +109,22 @@
 <!-- HOW IT WORKS -->
 <section>
   <div class="section-inner">
-    <p class="section-label">How it works</p>
-    <h2 class="section-title">Three steps to a better trip</h2>
+    <h2 class="section-title">How it works</h2>
     <div class="steps">
       <div class="step">
         <div class="step-number">1</div>
         <h3>Create your trip</h3>
-        <p>Add your destinations, travel dates, and passport nationality. Roam Wyld immediately shows you visa requirements and entry info.</p>
+        <p>Add your destinations, travel dates, and passport nationality. Roam Wyld immediately pulls visa requirements and entry info for everywhere you're going.</p>
       </div>
       <div class="step">
         <div class="step-number">2</div>
         <h3>Add your bookings</h3>
-        <p>Import from Gmail automatically or add flights, hotels, and activities manually. We validate flight numbers against live airline data.</p>
+        <p>Import from Gmail automatically or add flights, hotels, and activities by hand. Flight numbers are validated against live airline data before saving.</p>
       </div>
       <div class="step">
         <div class="step-number">3</div>
         <h3>Travel with confidence</h3>
-        <p>AI-powered transit directions, live entry requirements, and emergency info — synced to your device and ready without internet.</p>
+        <p>Entry requirements, emergency info, and your full itinerary live on your device. No cell service, no problem.</p>
       </div>
     </div>
   </div>
@@ -130,38 +133,36 @@
 <!-- PRICING -->
 <section class="pricing-bg" id="pricing">
   <div class="section-inner">
-    <p class="section-label">Pricing</p>
     <h2 class="section-title">Start free. Upgrade when you're ready.</h2>
-    <p class="section-sub">The core tools are free forever. Pro unlocks the features that save you the most time.</p>
+    <p class="section-sub">The core tools are free forever. Pro unlocks Gmail import and priority support.</p>
     <div class="pricing-grid">
       <div class="pricing-card">
         <div class="pricing-name">Free</div>
         <div class="pricing-price">$0</div>
         <div class="pricing-annual">&nbsp;</div>
         <ul class="pricing-features">
-          <li><span class="check">✓</span> Trip & booking management</li>
-          <li><span class="check">✓</span> Entry requirements & visa info</li>
-          <li><span class="check">✓</span> Currency converter</li>
-          <li><span class="check">✓</span> Emergency info</li>
-          <li><span class="check">✓</span> Flight validation</li>
-          <li><span class="check">✓</span> Offline access</li>
+          <li><span class="check">&#10003;</span> Trip &amp; booking management</li>
+          <li><span class="check">&#10003;</span> Entry requirements &amp; visa info</li>
+          <li><span class="check">&#10003;</span> Currency converter</li>
+          <li><span class="check">&#10003;</span> Emergency info</li>
+          <li><span class="check">&#10003;</span> Flight validation</li>
+          <li><span class="check">&#10003;</span> Offline access</li>
         </ul>
-        <a href="mailto:support@roamwyld.app?subject=Notify me when Roam Wyld launches" class="pricing-btn pricing-btn-secondary">Notify Me</a>
+        <a href="#beta" class="pricing-btn pricing-btn-secondary">Apply for Beta</a>
       </div>
       <div class="pricing-card featured">
         <div class="pricing-badge">Most Popular</div>
         <div class="pricing-name">Pro</div>
         <div class="pricing-price">$4.99<span>/mo</span></div>
-        <div class="pricing-annual">or $29.99/year — save 50%</div>
+        <div class="pricing-annual">or $29.99/year &mdash; save 50%</div>
         <ul class="pricing-features">
-          <li><span class="check">✓</span> Everything in Free</li>
-          <li><span class="check">✓</span> AI transit directions</li>
-          <li><span class="check">✓</span> Gmail booking import</li>
-          <li><span class="check">✓</span> Unlimited trips</li>
-          <li><span class="check">✓</span> Priority support</li>
+          <li><span class="check">&#10003;</span> Everything in Free</li>
+          <li><span class="check">&#10003;</span> Gmail booking import</li>
+          <li><span class="check">&#10003;</span> Unlimited trips</li>
+          <li><span class="check">&#10003;</span> Priority support</li>
         </ul>
-        <a href="mailto:support@roamwyld.app?subject=Notify me when Roam Wyld launches" class="pricing-btn pricing-btn-primary">Notify Me</a>
-        <p class="pricing-trial">14-day free trial at launch · TestFlight beta June 2026</p>
+        <a href="#beta" class="pricing-btn pricing-btn-primary">Apply for Beta</a>
+        <p class="pricing-trial">14-day free trial included</p>
       </div>
     </div>
   </div>
@@ -170,7 +171,6 @@
 <!-- FAQ PREVIEW -->
 <section>
   <div class="section-inner">
-    <p class="section-label">FAQ</p>
     <h2 class="section-title">Common questions</h2>
     <div class="faq-list">
       <div class="faq-item">
@@ -183,42 +183,42 @@
       </div>
       <div class="faq-item">
         <p class="faq-q">How does Gmail import work?</p>
-        <p class="faq-a">With a Pro subscription, you can connect your Gmail account. Roam Wyld reads your inbox for travel confirmation emails (flights, hotels, Airbnb), extracts the booking details using AI, and lets you add them to your trip in one tap. We only read emails — we never send, delete, or modify anything.</p>
+        <p class="faq-a">With a Pro subscription, you can connect your Gmail account. Roam Wyld reads your inbox for travel confirmation emails (flights, hotels, Airbnb), extracts the booking details, and lets you add them to your trip in one tap. We only read emails &mdash; we never send, delete, or modify anything.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q">Which countries are supported for entry requirements?</p>
         <p class="faq-a">We cover 50+ popular destinations with US, UK, Australian, Canadian, and EU passport data. We're adding more countries continuously. Data is updated regularly but always verify with official government sources before travel.</p>
       </div>
     </div>
-    <p style="margin-top:32px;"><a href="faq.html">View all FAQs →</a></p>
+    <p style="margin-top:32px;"><a href="faq.html">View all FAQs &rarr;</a></p>
   </div>
 </section>
 
-<!-- CTA -->
 <!-- FOUNDER -->
 <section>
-  <div class="section-inner" style="max-width:680px;">
+  <div class="section-inner founder-section">
     <p class="section-label">Why I built this</p>
-    <p style="font-size:17px;line-height:1.85;color:#374151;margin-bottom:16px;">
-      I'm planning my honeymoon — a self-planned trip across multiple countries — and I have a great itinerary. What I don't have is any good way to actually follow it once I get there. Bookings, visa details, transit between cities, what to do on which day — scattered across a dozen apps, email threads, and browser tabs. I want to spend more time enjoying the trip than managing it.
+    <p>
+      I built this for my honeymoon &mdash; a self-planned trip across multiple countries. Every tool I found handled bookings or destinations or visa requirements, but never all three, and never offline. So I built what I needed.
     </p>
-    <p style="font-size:17px;line-height:1.85;color:#374151;margin-bottom:20px;">
-      So I built what I needed.
+    <p>
+      What started as a personal tool became Roam Wyld. I submitted it to the App Store four weeks after writing the first line of code.
     </p>
-    <p style="font-size:15px;color:#6B7280;font-style:italic;">— Kirsten Evans, Founder</p>
+    <p class="founder-sig">&mdash; Kirsten Evans, Founder</p>
   </div>
 </section>
 
+<!-- CTA BAND -->
 <div class="cta-band">
-  <h2>Launching June 2026</h2>
-  <p>TestFlight beta opening soon. Get notified when it's live.</p>
-  <a href="mailto:support@roamwyld.app?subject=Notify me when Roam Wyld launches" class="btn-appstore" style="display:inline-flex;">
-    <span class="btn-appstore-icon">🍎</span>
-    <span class="btn-appstore-text">
-      <span class="btn-appstore-sub">Notify me when it's live on the</span>
-      App Store
-    </span>
-  </a>
+  <h2>Beta access opening soon</h2>
+  <p>Leave your email and we'll reach out directly when the app is live.</p>
+  <form id="beta-form-cta" action="https://formspree.io/f/xzdooqnq" method="POST" class="cta-form">
+    <input type="hidden" name="_subject" value="Roam Wyld Beta Access Request" />
+    <input type="hidden" name="source" value="cta-band" />
+    <input type="email" name="email" placeholder="your@email.com" required class="form-input form-input-dark" />
+    <button type="submit" class="form-btn form-btn-white">Apply for Beta</button>
+  </form>
+  <p id="cta-form-success" class="form-success form-success-light" style="display:none;">You're on the list. We'll be in touch.</p>
 </div>
 
 <footer>
@@ -226,21 +226,21 @@
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo">ROAM WYLD</div>
-        <p>Multi-country trip planning for curious travelers and digital nomads.</p>
+        <p>Multi-country trip management for curious travelers.</p>
       </div>
       <div class="footer-links">
         <h4>Product</h4>
         <ul>
           <li><a href="#features">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#download">Download</a></li>
+          <li><a href="#beta">Get Early Access</a></li>
         </ul>
       </div>
       <div class="footer-links">
         <h4>Support</h4>
         <ul>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="support.html">Help & Docs</a></li>
+          <li><a href="support.html">Help &amp; Docs</a></li>
           <li><a href="mailto:support@roamwyld.app">Contact</a></li>
         </ul>
       </div>
@@ -253,11 +253,43 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Roam Wyld. All rights reserved.</span>
+      <span>&copy; 2026 Roam Wyld. All rights reserved.</span>
       <span>Made for travelers who go further.</span>
     </div>
   </div>
 </footer>
+
+<script>
+function handleForm(formId, successId) {
+  var form = document.getElementById(formId);
+  if (!form) return;
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button');
+    btn.textContent = 'Submitting...';
+    btn.disabled = true;
+    try {
+      var res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById(successId).style.display = 'block';
+      } else {
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+      }
+    } catch (err) {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    }
+  });
+}
+handleForm('beta-form-hero', 'hero-form-success');
+handleForm('beta-form-cta', 'cta-form-success');
+</script>
 
 </body>
 </html>

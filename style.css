@@ -27,13 +27,13 @@ a:hover { text-decoration: underline; }
 
 /* TOP BANNER */
 .top-banner {
-  background: #1e293b;
+  background: #1A1E26;
   color: #94a3b8;
   text-align: center;
   padding: 10px 16px;
   font-size: 14px;
 }
-.top-banner a { color: #a5b4fc; font-weight: 600; }
+.top-banner a { color: #FCD34D; font-weight: 600; }
 .top-banner a:hover { text-decoration: underline; }
 
 /* NAV */

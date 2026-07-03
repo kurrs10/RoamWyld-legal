@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roam Wyld</title>
+  <script>
+    // Redirect /invite/TOKEN to /invite/?token=TOKEN so the static invite page can read it
+    var path = window.location.pathname;
+    if (path.match(/^\/invite\/[^/]+\/?$/)) {
+      var token = path.replace(/^\/invite\//, '').replace(/\/$/, '');
+      window.location.replace('/invite/?token=' + encodeURIComponent(token));
+    } else {
+      window.location.replace('/');
+    }
+  </script>
+</head>
+<body></body>
+</html>

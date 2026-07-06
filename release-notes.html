@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Notes — Roam Wyld</title>
+  <meta name="description" content="What's new in Roam Wyld — version history, improvements, and bug fixes." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+" (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId setPersonPropertiesForFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||(window.posthog=[]));
+    posthog.init('phc_uDBUoRnf2v2D2bRngUqBGKkCqaQuQaiWokRHupjGr9HW', {api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only'})
+  </script>
+  <style>
+    .release { max-width: 720px; margin: 0 auto; }
+    .release-entry { padding: 40px 0; border-bottom: 1px solid var(--border); }
+    .release-entry:last-child { border-bottom: none; }
+    .release-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; flex-wrap: wrap; }
+    .release-version { font-size: 22px; font-weight: 800; color: var(--text); }
+    .release-date { font-size: 13px; color: var(--text-muted); }
+    .release-tag {
+      display: inline-block; font-size: 11px; font-weight: 700;
+      padding: 3px 10px; border-radius: 20px;
+      background: var(--primary-light); color: var(--primary);
+    }
+    .release-tag.launch { background: var(--success-bg); color: var(--success); }
+    .release-category { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin: 20px 0 8px; }
+    .release-list { list-style: none; margin: 0; padding: 0; }
+    .release-list li { font-size: 15px; color: var(--text-muted); padding: 6px 0 6px 20px; position: relative; line-height: 1.6; }
+    .release-list li::before { content: "→"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="icon.png" alt="" class="nav-icon" style="width:28px;height:28px;border-radius:6px;flex-shrink:0;" />ROAM WYLD</a>
+    <div class="nav-links">
+      <a href="/#features" class="nav-link-hide">Features</a>
+      <a href="faq.html" class="nav-link-hide">FAQ</a>
+      <a href="support.html" class="nav-link-hide">Support</a>
+      <a href="https://apps.apple.com/us/app/roam-wyld/id6774633699" class="nav-cta">Download Free</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Release Notes</h1>
+  <p>Every update to Roam Wyld — what changed and why.</p>
+</div>
+
+<section>
+  <div class="release">
+
+    <div class="release-entry">
+      <div class="release-header">
+        <span class="release-version">Version 1.1</span>
+        <span class="release-date">July 2026</span>
+        <span class="release-tag">Improvement</span>
+      </div>
+
+      <p class="release-category">Gmail Import</p>
+      <ul class="release-list">
+        <li>Gmail import now searches all folders and custom labels — emails filed away from your inbox are found.</li>
+        <li>Added 50+ international airlines and booking platforms including Singapore Air, Qantas, Emirates, Garuda, Korean Air, AirAsia, LATAM, Avianca, and more.</li>
+        <li>Expanded booking keywords so more confirmation email formats are recognized.</li>
+        <li>Full email body now captured for more emails before sending to parsing — reduces missing details like confirmation numbers and dates.</li>
+        <li>Added car rental as a distinct booking type (Hertz, Enterprise, Sixt, Europcar, etc.).</li>
+      </ul>
+
+      <p class="release-category">General</p>
+      <ul class="release-list">
+        <li>Performance improvements and bug fixes.</li>
+      </ul>
+    </div>
+
+    <div class="release-entry">
+      <div class="release-header">
+        <span class="release-version">Version 1.0</span>
+        <span class="release-date">July 6, 2026</span>
+        <span class="release-tag launch">Launch</span>
+      </div>
+
+      <p class="release-category">Trip Management</p>
+      <ul class="release-list">
+        <li>Create trips with multiple destinations, travel dates, and passport nationality.</li>
+        <li>Add flights, hotels, and activities manually or via Gmail import.</li>
+        <li>Flight numbers validated against live airline data before saving.</li>
+        <li>Day-by-day itinerary view with all bookings in one timeline.</li>
+      </ul>
+
+      <p class="release-category">Entry Requirements</p>
+      <ul class="release-list">
+        <li>Visa rules, passport validity, and entry checklists for 50+ destinations.</li>
+        <li>Filtered to your actual passport nationality — no generic info.</li>
+        <li>Schengen 90/180-day tracker built in.</li>
+        <li>Fully available offline — cached at trip setup.</li>
+      </ul>
+
+      <p class="release-category">Gmail Import</p>
+      <ul class="release-list">
+        <li>Connect Gmail and Roam Wyld finds your travel confirmation emails automatically.</li>
+        <li>Review and select individual bookings before adding to your trip.</li>
+        <li>Read-only access — we never send, delete, or modify your email.</li>
+      </ul>
+
+      <p class="release-category">Offline Access</p>
+      <ul class="release-list">
+        <li>Itinerary, entry requirements, transit directions, and emergency info all cached locally.</li>
+        <li>Works in airplane mode, on a cruise ship, or anywhere without signal.</li>
+      </ul>
+
+      <p class="release-category">Transit Directions</p>
+      <ul class="release-list">
+        <li>AI-generated step-by-step transit directions for every travel segment.</li>
+        <li>Generated once and cached offline — no internet needed mid-trip.</li>
+      </ul>
+
+      <p class="release-category">Companion Features</p>
+      <ul class="release-list">
+        <li>Emergency numbers for every country on your trip — police, ambulance, fire, embassy.</li>
+        <li>Currency converter with real-time exchange rates and offline cached fallback.</li>
+        <li>Tipping customs per country.</li>
+        <li>Key phrases in the local language, surfaced by your itinerary day.</li>
+        <li>Travel insurance reference storage.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Always getting better.</h2>
+  <p>Have a feature request? We'd love to hear it.</p>
+  <a href="feedback.html" class="btn-beta btn-beta-white">Share Feedback</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="display:flex;align-items:center;gap:8px;"><img src="icon.png" alt="" style="width:22px;height:22px;border-radius:5px;" />ROAM WYLD</div>
+        <p>Multi-country trip management for curious travelers.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="release-notes.html">Release Notes</a></li>
+          <li><a href="https://apps.apple.com/us/app/roam-wyld/id6774633699">Download Free</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/schengen.html">Schengen 90/180 Rule</a></li>
+          <li><a href="/entry-requirements.html">Entry Requirements</a></li>
+          <li><a href="/offline-travel-app.html">Offline Travel App</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="support.html">Help &amp; Docs</a></li>
+          <li><a href="feedback.html">Feedback &amp; Features</a></li>
+          <li><a href="mailto:support@roamwyld.app">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Roam Wyld. All rights reserved.</span>
+      <span>Made for travelers who go further.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

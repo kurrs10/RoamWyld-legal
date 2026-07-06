@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback &amp; Feature Requests — Roam Wyld</title>
+  <meta name="description" content="Share feedback or request new features for Roam Wyld. We read every message." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+" (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId setPersonPropertiesForFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||(window.posthog=[]));
+    posthog.init('phc_uDBUoRnf2v2D2bRngUqBGKkCqaQuQaiWokRHupjGr9HW', {api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only'})
+  </script>
+  <style>
+    .feedback-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    @media (max-width: 680px) { .feedback-grid { grid-template-columns: 1fr; } }
+    .feedback-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .feedback-icon { font-size: 32px; }
+    .feedback-card h2 { font-size: 22px; font-weight: 800; color: var(--text); margin: 0; }
+    .feedback-card p { font-size: 15px; color: var(--text-muted); line-height: 1.7; margin: 0; }
+    .feedback-card .btn-beta { align-self: flex-start; margin-top: 8px; }
+    .quote-block {
+      text-align: center;
+      padding: 20px 0 40px;
+      font-size: 15px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+    .changelog-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .changelog-link a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    .changelog-link a:hover { text-decoration: underline; }
+    .what-we-built {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 60px 0 20px;
+    }
+    .what-we-built h2 { font-size: 22px; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+    .what-we-built p { font-size: 15px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; }
+    .feature-chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    .feature-chip {
+      font-size: 13px; font-weight: 600;
+      padding: 6px 14px; border-radius: 20px;
+      background: var(--primary-light); color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="icon.png" alt="" class="nav-icon" style="width:28px;height:28px;border-radius:6px;flex-shrink:0;" />ROAM WYLD</a>
+    <div class="nav-links">
+      <a href="/#features" class="nav-link-hide">Features</a>
+      <a href="faq.html" class="nav-link-hide">FAQ</a>
+      <a href="support.html" class="nav-link-hide">Support</a>
+      <a href="https://apps.apple.com/us/app/roam-wyld/id6774633699" class="nav-cta">Download Free</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Feedback &amp; Features</h1>
+  <p>Roam Wyld is built for travelers, by a traveler. Your input shapes every update.</p>
+</div>
+
+<section>
+  <div class="quote-block">"The wilderness must be explored!" — and so must your feedback inbox.</div>
+
+  <div class="feedback-grid">
+    <div class="feedback-card">
+      <div class="feedback-icon">🐛</div>
+      <h2>Found a bug?</h2>
+      <p>Something broken, missing, or behaving in a way that made you question reality? We want to know. The more detail the better — what you tapped, what happened, what you expected.</p>
+      <a href="mailto:support@roamwyld.app?subject=Bug Report&body=App version:%0D%0AWhat I did:%0D%0AWhat happened:%0D%0AWhat I expected:" class="btn-beta">Report a Bug</a>
+    </div>
+
+    <div class="feedback-card">
+      <div class="feedback-icon">✈️</div>
+      <h2>Got a feature idea?</h2>
+      <p>We're constantly building. If you're thinking "I wish this app could..." — say it. Good ideas travel fast. If it's on the roadmap, we'll tell you. If it's not, you might just put it there.</p>
+      <a href="mailto:support@roamwyld.app?subject=Feature Request&body=I'd love to see:%0D%0AThe problem it would solve:%0D%0AHow I'd use it:" class="btn-beta">Request a Feature</a>
+    </div>
+
+    <div class="feedback-card">
+      <div class="feedback-icon">💬</div>
+      <h2>General feedback</h2>
+      <p>Love it? Confused by it? Think a screen needs reorganizing? Something that's technically fine but annoying? All of it is useful. Don't be shy — we genuinely read these.</p>
+      <a href="mailto:support@roamwyld.app?subject=Feedback" class="btn-beta">Send Feedback</a>
+    </div>
+
+    <div class="feedback-card">
+      <div class="feedback-icon">🗺️</div>
+      <h2>Missing a destination?</h2>
+      <p>Entry requirements, emergency numbers, or transit directions missing for somewhere you're heading? Tell us which country and we'll prioritize adding it.</p>
+      <a href="mailto:support@roamwyld.app?subject=Missing Destination&body=Country or destination:%0D%0AWhat's missing:" class="btn-beta">Request a Destination</a>
+    </div>
+  </div>
+
+  <div class="what-we-built">
+    <h2>What we've built from user feedback</h2>
+    <p>v1.1 was almost entirely shaped by early testers. Here's what came directly from your messages:</p>
+    <div class="feature-chip-list">
+      <span class="feature-chip">Subfolder email search</span>
+      <span class="feature-chip">80+ international airlines</span>
+      <span class="feature-chip">Car rental bookings</span>
+      <span class="feature-chip">Trip.com &amp; Agoda support</span>
+      <span class="feature-chip">Better confirmation parsing</span>
+      <span class="feature-chip">Expanded keyword matching</span>
+    </div>
+  </div>
+
+  <p class="changelog-link">See everything that's shipped → <a href="release-notes.html">Release Notes</a></p>
+</section>
+
+<div class="cta-band">
+  <h2>"Adventure is out there."</h2>
+  <p>Go plan it. We'll keep improving the app while you do.</p>
+  <a href="https://apps.apple.com/us/app/roam-wyld/id6774633699" class="btn-beta btn-beta-white">Download Roam Wyld</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="display:flex;align-items:center;gap:8px;"><img src="icon.png" alt="" style="width:22px;height:22px;border-radius:5px;" />ROAM WYLD</div>
+        <p>Multi-country trip management for curious travelers.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/#features">Features</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="release-notes.html">Release Notes</a></li>
+          <li><a href="https://apps.apple.com/us/app/roam-wyld/id6774633699">Download Free</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/schengen.html">Schengen 90/180 Rule</a></li>
+          <li><a href="/entry-requirements.html">Entry Requirements</a></li>
+          <li><a href="/offline-travel-app.html">Offline Travel App</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="support.html">Help &amp; Docs</a></li>
+          <li><a href="feedback.html">Feedback &amp; Features</a></li>
+          <li><a href="mailto:support@roamwyld.app">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Roam Wyld. All rights reserved.</span>
+      <span>Made for travelers who go further.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

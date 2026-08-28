@@ -39,7 +39,7 @@
   <div class="container">
     <div class="logo">Roam Wyld</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective May 26, 2026 &nbsp;&middot;&nbsp; Last updated August 18, 2026</p>
+    <p class="meta">Effective May 26, 2026 &nbsp;&middot;&nbsp; Last updated August 28, 2026</p>
 
     <h2>Google API Services &mdash; Limited Use Disclosure</h2>
     <div class="highlight">
@@ -97,6 +97,30 @@
       <li>Analytics events help us understand which features are most useful so we can improve the app.</li>
       <li>Error reports help us identify and fix crashes.</li>
     </ul>
+
+    <h2>How We Protect Your Data</h2>
+    <p>We apply the safeguards below to all personal data, with particular care for sensitive data &mdash; including your passport nationality, travel insurance policy details, trip itineraries, travel companions' contact details, and any Gmail content processed during import.</p>
+
+    <p class="label">Encryption in transit</p>
+    <p>All data exchanged between the app, our backend, and every third-party service is encrypted in transit using HTTPS with TLS 1.2 or higher. This includes every request to our Supabase backend, to Google&rsquo;s Gmail API, and to Anthropic&rsquo;s Claude API.</p>
+
+    <p class="label">Encryption at rest</p>
+    <p>Data stored on our Supabase servers is encrypted at rest with AES-256. Data cached on your device is held in the operating system&rsquo;s app-private storage, which is encrypted by the device.</p>
+
+    <p class="label">Credential storage</p>
+    <p>Your Google OAuth access token is stored only on your device, in the platform secure keystore (Apple Keychain on iOS, Android Keystore on Android) &mdash; never on our servers. We never receive or store your Google password. The token is deleted from your device when you disconnect Gmail or delete your account, and you can revoke it at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+    <p class="label">Access controls</p>
+    <p>Every record in our database is protected by row-level security rules that let each account read and write only its own trips, bookings, profile, insurance details, and companion invitations. The backend function that processes Gmail content verifies your signed-in identity before handling any request. Administrative access to production systems is limited to the minimum necessary and protected by strong authentication.</p>
+
+    <p class="label">Sensitive data minimization</p>
+    <p>Gmail message text is processed in memory only for the moments needed to extract booking details and is never written to our database or server logs. We retrieve only the body text (up to 1,500 characters) of emails matching travel keywords &mdash; not your full mailbox. Passport data is limited to nationality; we never collect your passport number, name as shown on the document, or photo page.</p>
+
+    <p class="label">Vendor safeguards</p>
+    <p>Our infrastructure and processing providers (Supabase, Anthropic, and the underlying cloud hosting) maintain SOC 2 Type II or equivalent independent security certifications and are bound by data processing agreements that limit use of your data to providing their service to us. Anthropic does not use data submitted through its API to train models and does not retain it after processing.</p>
+
+    <p class="label">Ongoing practices</p>
+    <p>We keep software dependencies patched, review the data each feature collects before every release, and monitor for errors and anomalies. No method of transmission or storage is completely secure; if we become aware of a breach affecting your personal data, we will notify affected users and the relevant authorities as required by law.</p>
 
     <h2>Third-Party Services</h2>
 

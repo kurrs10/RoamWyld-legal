@@ -74,7 +74,7 @@
     <p>If you or your travel partner leave a shared trip, or are removed from one, access to the other person's data is revoked immediately, and any of their booking data already downloaded to your device is deleted from local storage &mdash; it isn't retained after access ends.</p>
 
     <p class="label">Gmail (optional)</p>
-    <p>If you use Gmail Import, Roam Wyld requests read-only access to your Gmail account. With your permission, it reads the full content and attachments of emails matching travel-confirmation senders and keywords within the trip's date range &mdash; and no other emails &mdash; and sends up to ~8,000 characters per email (including text extracted from PDF attachments) to our AI provider to extract booking details. We do not store your Gmail password or credentials. Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    <p>If you use Gmail Import, Roam Wyld requests read-only access to your Gmail account. With your permission, it reads the full message bodies of emails matching travel-confirmation senders and keywords, dated from several months before your trip through shortly after it &mdash; and no other emails &mdash; and sends up to ~8,000 characters of text per email to our AI provider to extract booking details. Roam Wyld does not parse PDFs or other document attachments. We do not store your Gmail password or credentials. Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
     <p class="label">Usage Analytics</p>
     <p>Feature usage events collected via PostHog, linked to an anonymous user identifier. Events may include which features you use and general trip attributes (e.g., number of destinations). We do not collect your name, email, or other identifying information in analytics events.</p>
@@ -94,7 +94,7 @@
     <h2>How We Use Your Data</h2>
     <ul>
       <li>To store and display your trips, bookings, insurance details, and travel profile within the app.</li>
-      <li>When Gmail Import is used, the full text and PDF attachments of matching emails (up to ~8,000 characters per email) are sent to Anthropic&rsquo;s Claude API via our secure backend to extract booking details. Roam Wyld does not store this email content after processing.</li>
+      <li>When Gmail Import is used, up to ~8,000 characters of text per matching email is sent to Anthropic&rsquo;s Claude API via our secure backend to extract booking details. Roam Wyld does not parse PDFs or other document attachments, and does not store this email content after processing.</li>
       <li>Analytics events help us understand which features are most useful so we can improve the app.</li>
       <li>Error reports help us identify and fix crashes.</li>
     </ul>
@@ -115,7 +115,7 @@
     <p>Every record in our database is protected by row-level security rules that let each account read and write only its own trips, bookings, profile, insurance details, and companion invitations. The backend function that processes Gmail content verifies your signed-in identity before handling any request. Administrative access to production systems is limited to the minimum necessary and protected by strong authentication.</p>
 
     <p class="label">Sensitive data minimization</p>
-    <p>Gmail message text is processed in memory only for the moments needed to extract booking details and is never written to our database or server logs. We read only the content and attachments of emails matching travel-confirmation senders and keywords within a trip's date range &mdash; not your full mailbox &mdash; and send up to ~8,000 characters per matching email for extraction. Passport data is limited to nationality; we never collect your passport number, name as shown on the document, or photo page.</p>
+    <p>Gmail message text is processed in memory only for the moments needed to extract booking details and is never written to our database or server logs. We read only the message bodies of emails matching travel-confirmation senders and keywords, dated from several months before a trip through shortly after it &mdash; not your full mailbox &mdash; and send up to ~8,000 characters of text per matching email for extraction. We do not parse PDFs or other document attachments. Passport data is limited to nationality; we never collect your passport number, name as shown on the document, or photo page.</p>
 
     <p class="label">Vendor safeguards</p>
     <p>Our infrastructure and processing providers (Supabase, Anthropic, and the underlying cloud hosting) maintain SOC 2 Type II or equivalent independent security certifications and are bound by data processing agreements that limit use of your data to providing their service to us. Anthropic processes Gmail Import content under its Commercial Terms of Service and does not train on or retain this content.</p>
@@ -129,7 +129,7 @@
     <p>Database and authentication provider. Your account, trip, booking, insurance, and profile data is stored on Supabase servers in the United States.</p>
 
     <p class="label">Anthropic (Claude)</p>
-    <p>AI processing for Gmail Import. Up to ~8,000 characters per email &mdash; including text extracted from PDF attachments &mdash; is sent to Anthropic&rsquo;s API to extract booking details. Roam Wyld does not store this content; it is processed under Anthropic&rsquo;s Commercial Terms of Service, and Anthropic does not train on or retain this content.</p>
+    <p>AI processing for Gmail Import. Up to ~8,000 characters of text per matching email is sent to Anthropic&rsquo;s API to extract booking details. Roam Wyld does not parse PDFs or other document attachments. Roam Wyld does not store this content; it is processed under Anthropic&rsquo;s Commercial Terms of Service, and Anthropic does not train on or retain this content.</p>
 
     <p class="label">Mapbox</p>
     <p>Mapping services. Map display interactions may be processed by Mapbox servers.</p>

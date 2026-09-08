@@ -70,8 +70,8 @@
       Gmail account via Google OAuth to search for travel confirmation emails. Specifically:
     </p>
     <ul>
-      <li>With your permission, we read the full content and attachments of emails matching travel-confirmation senders and keywords within the trip's date range. We do not read any other emails.</li>
-      <li>Up to about 8,000 characters per matching email &mdash; including text extracted from PDF attachments &mdash; is sent to our AI provider (Anthropic&rsquo;s Claude API) via our secure backend to extract booking details (flight numbers, hotel names, confirmation codes, dates). Email content is processed in memory, is read-only (Roam Wyld cannot send, modify, or delete mail), and is not stored by Roam Wyld after processing.</li>
+      <li>With your permission, we read the full message bodies of emails matching travel-confirmation senders and keywords, dated from several months before your trip through shortly after it &mdash; including large message bodies that Gmail delivers as attachments. We do not read your other emails.</li>
+      <li>Up to about 8,000 characters of text per matching email is sent to our AI provider (Anthropic&rsquo;s Claude API) via our secure backend to extract booking details (flight numbers, hotel names, confirmation codes, dates). Roam Wyld does not parse PDFs or other document attachments. Email content is processed in memory, is read-only (Roam Wyld cannot send, modify, or delete mail), and is not stored by Roam Wyld after processing.</li>
       <li>Gmail data is not used to develop, improve, or train generalized or non-personalized AI or machine-learning models. Anthropic is contractually prohibited from training on this data.</li>
       <li>We do not access emails unrelated to travel bookings.</li>
       <li>

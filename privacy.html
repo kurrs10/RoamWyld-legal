@@ -60,7 +60,7 @@
     <p>Your email address, used only to sign in and identify your data.</p>
 
     <p class="label">Trips &amp; Bookings</p>
-    <p>Trip names, destinations, travel dates, and booking details (flight numbers, hotel names, confirmation codes, activities) that you enter manually or import via Gmail.</p>
+    <p>Trip names, destinations, travel dates, and booking details (flight numbers, hotel names, confirmation codes, activities) that you enter manually or import.</p>
 
     <p class="label">Travel Profile</p>
     <p>Your passport nationality and home currency, stored in your profile to personalize entry requirements, visa information, and currency conversion. You may update or remove this at any time in Profile settings.</p>
@@ -132,7 +132,7 @@
     <p>Database and authentication provider. Your account, trip, booking, insurance, and profile data is stored on Supabase servers in the United States.</p>
 
     <p class="label">Anthropic (Claude)</p>
-    <p>AI processing for Gmail Import, PDF &amp; Photo Import, and Transit Directions. For Gmail Import, up to ~8,000 characters of text per matching email is sent to Anthropic&rsquo;s API to extract booking details; email attachments are not parsed. For PDF &amp; Photo Import, the PDF or photos you choose are sent to extract booking details. Roam Wyld does not store this content; it is processed under Anthropic&rsquo;s Commercial Terms of Service, and Anthropic does not train on or retain this content. For Transit Directions, your trip details (destinations, dates, and booking summaries) are sent to generate routing &mdash; this data is not retained by Anthropic. Passport nationality is not sent to the Claude API.</p>
+    <p>AI processing for Gmail Import, PDF &amp; Photo Import, Transit Directions, Discover, and Translate. For Gmail Import, up to ~8,000 characters of text per matching email is sent to Anthropic&rsquo;s API to extract booking details; email attachments are not parsed. For PDF &amp; Photo Import, the PDF or photos you choose are sent to extract booking details. Roam Wyld does not store this content; it is processed under Anthropic&rsquo;s Commercial Terms of Service, and Anthropic does not train on or retain this content. For Transit Directions, your trip name, destinations, and dates, plus booking summaries (flight numbers and airports, hotel and activity names and dates), are sent to generate routing. Confirmation numbers, booking notes, and passport nationality are not sent. For Discover, your trip name, destinations, dates, and the budget and interests you choose are sent to generate suggestions. For Translate, the phrase you enter and the target language are sent.</p>
 
     <p class="label">Mapbox</p>
     <p>Mapping services. Map display interactions may be processed by Mapbox servers.</p>

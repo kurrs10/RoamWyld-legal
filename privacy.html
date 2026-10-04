@@ -97,7 +97,7 @@
     <ul>
       <li>To store and display your trips, bookings, insurance details, and travel profile within the app.</li>
       <li>When Gmail Import is used, up to ~8,000 characters of text per matching email is sent to Anthropic&rsquo;s Claude API via our secure backend to extract booking details. Roam Wyld does not parse PDFs or other attachments in your email, and does not store this email content after processing.</li>
-      <li>When PDF or photo import is used, the document you choose is sent to Anthropic&rsquo;s Claude API via our secure backend to extract booking details. The file is not stored after processing.</li>
+      <li>When PDF or photo import is used, the document you choose is sent to Anthropic&rsquo;s Claude API via our secure backend to extract booking details. Roam Wyld does not store the file after processing.</li>
       <li>Analytics events help us understand which features are most useful so we can improve the app.</li>
       <li>Error reports help us identify and fix crashes.</li>
     </ul>
@@ -161,8 +161,8 @@
       <tr><td>Trips, bookings, insurance details</td><td>Until you delete your account</td></tr>
       <tr><td>Travel profile (passport, currency)</td><td>Until you delete your account or update it</td></tr>
       <tr><td>Travel companion invite emails</td><td>Deleted immediately on invite decline; otherwise until you delete the trip or your account</td></tr>
-      <tr><td>Gmail email body text</td><td>Not retained &mdash; deleted immediately after extraction</td></tr>
-      <tr><td>Imported PDFs and photos</td><td>Not retained &mdash; discarded immediately after extraction</td></tr>
+      <tr><td>Gmail email body text</td><td>Not retained by Roam Wyld &mdash; deleted immediately after extraction</td></tr>
+      <tr><td>Imported PDFs and photos</td><td>Not retained by Roam Wyld &mdash; discarded immediately after extraction</td></tr>
       <tr><td>Analytics events (PostHog)</td><td>Per PostHog&rsquo;s retention policy (verify in PostHog settings)</td></tr>
       <tr><td>Error logs (Sentry)</td><td>90 days</td></tr>
     </table>

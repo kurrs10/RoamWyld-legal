@@ -79,14 +79,14 @@
     <p class="label">PDF &amp; Photo Import (optional)</p>
     <p>If you import a booking by choosing a PDF or taking or selecting a photo of a travel document (up to 8 photos at a time), that file is sent over an encrypted connection to our secure backend and on to our AI provider to extract booking details. Roam Wyld does not store the file or its contents after processing; only the booking details you choose to save are kept. Camera and photo-library access are requested only when you use this feature.</p>
     <p class="label">Usage Analytics</p>
-    <p>Feature usage events collected via PostHog, linked to an anonymous user identifier. Events may include which features you use and general trip attributes (e.g., number of destinations). We do not collect your name, email, or other identifying information in analytics events.</p>
+    <p>Feature usage events collected via PostHog, linked to a random account ID rather than your name or email address. Events may include which features you use and general trip attributes (e.g., number of destinations). We do not collect your name, email, or other identifying information in analytics events.</p>
 
     <p class="label">Error Reports</p>
-    <p>Crash and error logs collected via Sentry to help us identify and fix bugs. Logs do not include your trip data or personal information.</p>
+    <p>Crash and error logs collected via Sentry to help us identify and fix bugs. Logs do not include your trip data or personal information. Crash reports may include a short screen recording of the app with all text and images masked, and are scrubbed of email addresses and sign-in tokens before they are sent.</p>
 
     <h2>What We Do NOT Collect</h2>
     <ul>
-      <li>Payment information of any kind (all billing is handled by Apple)</li>
+      <li>Payment information of any kind (any billing is handled by Apple or Google Play)</li>
       <li>Background location or precise GPS coordinates</li>
       <li>Contacts, call history, or messages</li>
       <li>Gmail content unrelated to travel bookings</li>
@@ -138,13 +138,13 @@
     <p>Mapping services. Map display interactions may be processed by Mapbox servers.</p>
 
     <p class="label">PostHog</p>
-    <p>Usage analytics. Events are linked to an anonymous user identifier and stored on PostHog servers in the United States.</p>
+    <p>Usage analytics. Events are linked to a random account ID (not your name or email address) and stored on PostHog servers in the United States.</p>
 
     <p class="label">Sentry</p>
     <p>Crash and error monitoring. Logs are stored on Sentry servers and retained for 90 days.</p>
 
-    <p class="label">Apple</p>
-    <p>If in-app purchases are offered in a future version of Roam Wyld, all billing will be handled by Apple through the App Store. Apple does not share payment information with Roam Wyld.</p>
+    <p class="label">Apple and Google Play</p>
+    <p>If in-app purchases are offered in a future version of Roam Wyld, all billing will be handled by Apple through the App Store or by Google through Google Play. Neither shares payment information with Roam Wyld.</p>
 
     <p class="label">ImprovMX</p>
     <p>Email forwarding for support@roamwyld.app. Messages sent to this address pass through ImprovMX's servers before reaching our inbox; ImprovMX does not have access to any other Roam Wyld data and is not used for any other purpose.</p>
@@ -168,7 +168,7 @@
     </table>
 
     <h2 id="account-deletion">Account Deletion</h2>
-    <p>You may delete your account and all associated data at any time directly in the app (Profile &rarr; Delete Account). Deletion is permanent and immediate &mdash; your account, trips, bookings, insurance details, and travel profile are removed from our servers. Anonymized analytics event data cannot be linked back to you and may be retained as part of aggregate statistics.</p>
+    <p>You may delete your account and all associated data at any time directly in the app (Profile &rarr; Delete Account). Deletion is permanent and immediate &mdash; your account, trips, bookings, insurance details, and travel profile are removed from our servers. After you delete your account, past usage analytics and error logs remain only under a random account ID that no longer maps to any account, for their normal retention periods. We also keep a deletion record with only the month, platform, and ranges for account age and number of trips, which cannot be linked back to you.</p>
     <p>If you no longer have the app installed, you can request deletion by email instead. See <a href="delete-account.html">roamwyld.app/delete-account.html</a> for instructions.</p>
 
     <h2>Your Rights</h2>

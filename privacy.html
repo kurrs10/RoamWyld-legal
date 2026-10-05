@@ -69,7 +69,7 @@
     <p>If you add travel insurance to a trip, we store the provider name, policy number, coverage dates, and emergency contact number you enter. This information is stored on your device and on our servers and is never shared with insurance providers or third parties.</p>
 
     <p class="label">Travel Companions (optional)</p>
-    <p>If you share a trip with another person, we store their display name and email address for the purpose of sending them a trip invitation. By inviting someone, you confirm you have their permission to share their information with Roam Wyld. If they decline the invitation, their email address is deleted from our records.</p>
+    <p>If you share a trip with another person, you choose a display name for them and we create a private invite link for you to send them yourself. We do not collect their email address or phone number. By inviting someone, you confirm you have their permission to use that name in Roam Wyld. The name is kept until you stop sharing the trip or delete the trip or your account.</p>
     <p>Once someone accepts an invitation to a shared trip, they can see that trip's bookings marked "Visible to both of us" &mdash; including confirmation numbers and costs &mdash; and you can see theirs. Either person can mark a booking "Just me" to keep it visible only to themselves. This visibility is limited to people you've explicitly invited and who've accepted; it is never shared more broadly.</p>
     <p>If you or your travel partner leave a shared trip, or are removed from one, access to the other person's data is revoked immediately, and any of their booking data already downloaded to your device is deleted from local storage &mdash; it isn't retained after access ends.</p>
 
@@ -103,7 +103,7 @@
     </ul>
 
     <h2>How We Protect Your Data</h2>
-    <p>We apply the safeguards below to all personal data, with particular care for sensitive data &mdash; including your passport nationality, travel insurance policy details, trip itineraries, travel companions' contact details, and any Gmail content processed during import.</p>
+    <p>We apply the safeguards below to all personal data, with particular care for sensitive data &mdash; including your passport nationality, travel insurance policy details, trip itineraries, travel companions' display names, and any Gmail content processed during import.</p>
 
     <p class="label">Encryption in transit</p>
     <p>All data exchanged between the app, our backend, and every third-party service is encrypted in transit using HTTPS with TLS 1.2 or higher. This includes every request to our Supabase backend, to Google&rsquo;s Gmail API, and to Anthropic&rsquo;s Claude API.</p>
@@ -160,7 +160,7 @@
       <tr><td>Account email</td><td>Until you delete your account</td></tr>
       <tr><td>Trips, bookings, insurance details</td><td>Until you delete your account</td></tr>
       <tr><td>Travel profile (passport, currency)</td><td>Until you delete your account or update it</td></tr>
-      <tr><td>Travel companion invite emails</td><td>Deleted immediately on invite decline; otherwise until you delete the trip or your account</td></tr>
+      <tr><td>Travel companion display names</td><td>Until you stop sharing the trip or delete the trip or your account</td></tr>
       <tr><td>Gmail email body text</td><td>Not retained by Roam Wyld &mdash; deleted immediately after extraction</td></tr>
       <tr><td>Imported PDFs and photos</td><td>Not retained by Roam Wyld &mdash; discarded immediately after extraction</td></tr>
       <tr><td>Analytics events (PostHog)</td><td>Per PostHog&rsquo;s retention policy (verify in PostHog settings)</td></tr>

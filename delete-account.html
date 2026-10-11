@@ -37,7 +37,7 @@
       <li>Go to the <strong>Profile</strong> tab.</li>
       <li>Tap <strong>Delete Account</strong> and confirm.</li>
     </ol>
-    <p>Your account and data are deleted right away. This works the same on iPhone and Android.</p>
+    <p>Your account and data are deleted from our live servers right away. Encrypted backup copies are deleted automatically within 8 days. This works the same on iPhone and Android.</p>
 
     <h2>Option 2: Request deletion by email</h2>
     <p>If you no longer have the app installed, or can&rsquo;t sign in:</p>
@@ -58,9 +58,11 @@
 
     <h2>What may be kept</h2>
     <ul>
-      <li><strong>Anonymous usage analytics</strong> that can&rsquo;t be linked back to you, kept as part of aggregate statistics.</li>
-      <li><strong>Crash and error logs</strong>, which contain no trip data, deleted automatically after 90 days.</li>
-      <li>An <strong>anonymous deletion record</strong> (date, account age in days, and number of trips), with no email or other identifying information.</li>
+      <li><strong>Encrypted backups</strong> of our database, which may contain your data for up to 8 days after deletion. They are used only to recover from errors, are never used to restore a deleted account, and are deleted automatically.</li>
+      <li><strong>Usage analytics</strong> in PostHog, linked to a random account ID rather than your name or email address, kept for up to 7 years.</li>
+      <li><strong>Crash and error logs</strong> in Sentry, which do not include your name or email address, deleted automatically after 30 days.</li>
+      <li>A <strong>sign-in security log</strong> kept by our sign-in provider, including your email address and IP address, deleted automatically after 30 days.</li>
+      <li>An <strong>anonymous deletion record</strong> (month, platform, and ranges for account age and number of trips), with no name, email address, or account ID.</li>
     </ul>
     <p>If you connected Gmail, you can also revoke Roam Wyld&rsquo;s access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
     <p>For more detail, see our <a href="privacy.html#account-deletion">Privacy Policy</a>.</p>

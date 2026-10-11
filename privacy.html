@@ -109,7 +109,7 @@
     <p>All data exchanged between the app, our backend, and every third-party service is encrypted in transit using HTTPS with TLS 1.2 or higher. This includes every request to our Supabase backend, to Google&rsquo;s Gmail API, and to Anthropic&rsquo;s Claude API.</p>
 
     <p class="label">Encryption at rest</p>
-    <p>Data stored on our Supabase servers is encrypted at rest with AES-256. Data cached on your device is held in the operating system&rsquo;s app-private storage, which is encrypted by the device.</p>
+    <p>Data stored on our Supabase servers is encrypted at rest with AES-256. Data cached on your device is held in the operating system&rsquo;s app-private storage, which is encrypted by the device. Our daily database backups are separately encrypted, with a key that only Roam Wyld holds, before they are stored.</p>
 
     <p class="label">Credential storage</p>
     <p>Your Google OAuth access token is stored only on your device, in the platform secure keystore (Apple Keychain on iOS, Android Keystore on Android) &mdash; never on our servers. We never receive or store your Google password. The token is deleted from your device when you disconnect Gmail or delete your account, and you can revoke it at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
@@ -149,6 +149,9 @@
     <p class="label">ImprovMX</p>
     <p>Email forwarding for support@roamwyld.app. Messages sent to this address pass through ImprovMX's servers before reaching our inbox; ImprovMX does not have access to any other Roam Wyld data and is not used for any other purpose.</p>
 
+    <p class="label">GitHub (Microsoft)</p>
+    <p>Runs our nightly backup job and stores the resulting backup file. The backup is created and encrypted on a temporary GitHub server that is discarded when the job finishes. GitHub stores only the encrypted file, cannot read it, and deletes it after 7 days. GitHub has no other access to Roam Wyld data.</p>
+
     <h2>Data Sharing &amp; Sale</h2>
     <p>We do not sell, rent, or trade your personal data to any third party. Data is shared only with the service providers listed above, solely to operate the app.</p>
     <p>If you use trip sharing, bookings marked "Visible to both of us" &mdash; including confirmation numbers and costs &mdash; are visible to trip members you've invited and who've accepted. This is user-to-user sharing within a trip you control, not sharing with a third party.</p>
@@ -166,10 +169,12 @@
       <tr><td>Analytics events (PostHog)</td><td>Up to 7 years (PostHog&rsquo;s retention period for our plan)</td></tr>
       <tr><td>Error logs (Sentry)</td><td>30 days</td></tr>
       <tr><td>Sign-in security log (email address, IP address)</td><td>30 days</td></tr>
+      <tr><td>Encrypted database backups (copies of the data above)</td><td>Each backup is deleted automatically 7 days after it is made. Data you delete, or that we delete on schedule, may remain in a backup for up to 8 days.</td></tr>
     </table>
 
     <h2 id="account-deletion">Account Deletion</h2>
-    <p>You may delete your account and all associated data at any time directly in the app (Profile &rarr; Delete Account). Deletion is permanent and immediate &mdash; your account, trips, bookings, insurance details, and travel profile are removed from our servers. After you delete your account, past usage analytics remain in PostHog under a random account ID, and error reports remain in Sentry under a random device ID, until their normal retention periods end; neither includes your name or email address. Our sign-in provider keeps a security log of sign-ins and account changes, including your email address and IP address, for up to 30 days. We also keep a deletion record with only the month, platform, and ranges for account age and number of trips, with no name, email address, or account ID.</p>
+    <p>You may delete your account and all associated data at any time directly in the app (Profile &rarr; Delete Account). Deletion is permanent. Your account, trips, bookings, insurance details, and travel profile are removed from our live servers immediately. Copies may remain in our encrypted backups for up to 8 days until those backups are automatically deleted, as described below. After you delete your account, past usage analytics remain in PostHog under a random account ID, and error reports remain in Sentry under a random device ID, until their normal retention periods end; neither includes your name or email address. Our sign-in provider keeps a security log of sign-ins and account changes, including your email address and IP address, for up to 30 days. We also keep a deletion record with only the month, platform, and ranges for account age and number of trips, with no name, email address, or account ID.</p>
+    <p>Backups. Once a day we make an encrypted backup of the app&rsquo;s database, including trips, bookings, travel profiles (passport nationality and home currency), insurance details, and travel companion display names, so we can recover from errors or data loss. Each backup is encrypted before it is stored, with a key that only Roam Wyld holds, and is deleted automatically 7 days after it is made. Because of this, anything you delete, or that we delete on schedule, may remain in a backup for up to 8 days. We use backups only to recover data lost through an error. We never use a backup to bring back a deleted account or anything you deleted.</p>
     <p>If you no longer have the app installed, you can request deletion by email instead. See <a href="delete-account.html">roamwyld.app/delete-account.html</a> for instructions.</p>
 
     <h2>Your Rights</h2>

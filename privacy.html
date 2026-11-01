@@ -39,7 +39,7 @@
   <div class="container">
     <div class="logo">Roam Wyld</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective May 26, 2026 &nbsp;&middot;&nbsp; Last updated October 22, 2026</p>
+    <p class="meta">Effective May 26, 2026 &nbsp;&middot;&nbsp; Last updated November 1, 2026</p>
 
     <h2>Google API Services &mdash; Limited Use Disclosure</h2>
     <div class="highlight">
@@ -81,12 +81,15 @@
     <p class="label">Usage Analytics</p>
     <p>Feature usage events collected via PostHog, linked to a random account ID rather than your name or email address. Events may include which features you use and general trip attributes (e.g., number of destinations). We do not collect your name or email address in analytics events. When an event is received, PostHog uses your IP address to estimate your approximate location (such as country, region and city), then discards the IP address. Events recorded on or before October 5, 2026 may also include the IP address.</p>
 
+    <p class="label">Subscriptions (Roam Wyld Pro)</p>
+    <p>If you buy Roam Wyld Pro, Apple or Google handles the payment. We never see your card or billing details. To unlock Pro, we receive the purchase record (product, purchase and renewal dates, and whether the subscription is active, cancelled or refunded), linked to your random account ID. We also store whether your account has free Pro, for example as a Founder. Pro features such as PDF export and trip recap cards are created on your device; nothing you export is uploaded to us.</p>
+
     <p class="label">Error Reports</p>
     <p>Crash and error logs collected via Sentry to help us identify and fix bugs. Error reports are not linked to your name, email address, or account. Error reports, and a small sample of app sessions, may include a short screen recording of the app with all text and images masked.</p>
 
     <h2>What We Do NOT Collect</h2>
     <ul>
-      <li>Payment information of any kind (any billing is handled by Apple or Google Play)</li>
+      <li>Payment card or billing details (Apple and Google Play handle all payments; we receive only the purchase record described above)</li>
       <li>Background location or precise GPS coordinates</li>
       <li>Contacts, call history, or messages</li>
       <li>Gmail content unrelated to travel bookings</li>
@@ -99,6 +102,7 @@
       <li>When Gmail Import is used, up to ~8,000 characters of text per matching email is sent to Anthropic&rsquo;s Claude API via our secure backend to extract booking details. Roam Wyld does not parse PDFs or other attachments in your email, and does not store this email content after processing.</li>
       <li>When PDF or photo import is used, the document you choose is sent to Anthropic&rsquo;s Claude API via our secure backend to extract booking details. Roam Wyld does not store the file after processing.</li>
       <li>To prevent abuse and keep costs under control, we count how often each account uses the AI-powered and booking-check features, and limit heavy use.</li>
+      <li>If you subscribe to Roam Wyld Pro, we use your purchase record to unlock Pro on your devices, restore it when you reinstall, and count subscriptions. We also record paywall views and outcomes (for example, purchased or cancelled) in analytics, linked to your random account ID.</li>
       <li>Analytics events help us understand which features are most useful so we can improve the app.</li>
       <li>Error reports help us identify and fix crashes.</li>
     </ul>
@@ -152,7 +156,10 @@
     <p>Crash and error monitoring. Logs are stored on Sentry servers and retained for 30 days.</p>
 
     <p class="label">Apple and Google Play</p>
-    <p>If in-app purchases are offered in a future version of Roam Wyld, all billing will be handled by Apple through the App Store or by Google through Google Play. Neither shares payment information with Roam Wyld.</p>
+    <p>Roam Wyld Pro is sold only through the Apple App Store and Google Play, which handle payment, renewals, cancellations and refunds under their own terms and privacy policies. Neither shares your payment details with Roam Wyld.</p>
+
+    <p class="label">RevenueCat</p>
+    <p>Subscription management for Roam Wyld Pro. When you&rsquo;re signed in and Pro is available, the app sends RevenueCat your random account ID, your App Store or Google Play purchase and receipt data, your device type, operating system and app version, and your IP address (as part of every connection). RevenueCat checks the purchase with Apple or Google and tells the app whether Pro is active. We do not send RevenueCat your name or email address. RevenueCat stores this data in the United States, processes it only to provide its service to us under a data processing agreement, and deletes it when we ask.</p>
 
     <p class="label">ImprovMX</p>
     <p>Email forwarding for support@roamwyld.app. Messages sent to this address pass through ImprovMX's servers before reaching our inbox; ImprovMX does not have access to any other Roam Wyld data and is not used for any other purpose.</p>
@@ -179,10 +186,12 @@
       <tr><td>Sign-in security log (email address, IP address)</td><td>30 days</td></tr>
       <tr><td>Usage counters that prevent abuse (account ID, feature name, and number of requests per hour or day)</td><td>2 days, or until you delete your account</td></tr>
       <tr><td>Encrypted database backups (copies of the data above)</td><td>Each backup is deleted automatically 7 days after it is made. Data you delete, or that we delete on schedule, may remain in a backup for up to 8 days.</td></tr>
+      <tr><td>Pro status and free-Pro grants (Founder or beta)</td><td>Until you delete your account</td></tr>
+      <tr><td>Subscription records (RevenueCat)</td><td>Until you delete your account; we then ask RevenueCat to delete them. Apple and Google keep their own transaction records under their policies.</td></tr>
     </table>
 
     <h2 id="account-deletion">Account Deletion</h2>
-    <p>You may delete your account and all associated data at any time directly in the app (Profile &rarr; Delete Account). Deletion is permanent. Your account, trips, bookings, insurance details, and travel profile are removed from our live servers immediately. Copies may remain in our encrypted backups for up to 8 days until those backups are automatically deleted, as described below. After you delete your account, past usage analytics remain in PostHog under a random account ID, and error reports remain in Sentry under a random device ID, until their normal retention periods end; neither includes your name or email address. Our sign-in provider keeps a security log of sign-ins and account changes, including your email address and IP address, for up to 30 days. We also keep a deletion record with only the month, platform, and ranges for account age and number of trips, with no name, email address, or account ID.</p>
+    <p>You may delete your account and all associated data at any time directly in the app (Profile &rarr; Delete Account). Deletion is permanent. Your account, trips, bookings, insurance details, and travel profile are removed from our live servers immediately. Copies may remain in our encrypted backups for up to 8 days until those backups are automatically deleted, as described below. After you delete your account, past usage analytics remain in PostHog under a random account ID, and error reports remain in Sentry under a random device ID, until their normal retention periods end; neither includes your name or email address. Our sign-in provider keeps a security log of sign-ins and account changes, including your email address and IP address, for up to 30 days. We also keep a deletion record with only the month, platform, and ranges for account age and number of trips, with no name, email address, or account ID. Deleting your account does not cancel a Roam Wyld Pro subscription. Cancel it first in your App Store or Google Play settings.</p>
     <p>Backups. Once a day we make an encrypted backup of the app&rsquo;s database, including trips, bookings, travel profiles (passport nationality and home currency), insurance details, and travel companion display names, so we can recover from errors or data loss. Each backup is encrypted before it is stored, with a key that only Roam Wyld holds, and is deleted automatically 7 days after it is made. Because of this, anything you delete, or that we delete on schedule, may remain in a backup for up to 8 days. We use backups only to recover data lost through an error. We never use a backup to bring back a deleted account or anything you deleted.</p>
     <p>If you no longer have the app installed, you can request deletion by email instead. See <a href="delete-account.html">roamwyld.app/delete-account.html</a> for instructions.</p>
 

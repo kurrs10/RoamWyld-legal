@@ -39,7 +39,7 @@
   <div class="container">
     <div class="logo">Roam Wyld</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective May 26, 2026 &nbsp;&middot;&nbsp; Last updated November 1, 2026</p>
+    <p class="meta">Effective May 26, 2026 &nbsp;&middot;&nbsp; Last updated November 4, 2026</p>
 
     <h2>Google API Services &mdash; Limited Use Disclosure</h2>
     <div class="highlight">
@@ -126,7 +126,7 @@
     <p>Gmail message text is processed in memory only for the moments needed to extract booking details and is never written to our database or server logs. We read only the message bodies of emails matching travel-confirmation senders and keywords, dated from several months before a trip through shortly after it &mdash; not your full mailbox &mdash; and send up to ~8,000 characters of text per matching email for extraction. We do not parse PDFs or other attachments in your email. Passport data is limited to nationality; we never collect your passport number, name as shown on the document, or photo page.</p>
 
     <p class="label">Vendor safeguards</p>
-    <p>Our infrastructure and processing providers (Supabase, Anthropic, and the underlying cloud hosting) maintain SOC 2 Type II or equivalent independent security certifications and are bound by data processing agreements that limit use of your data to providing their service to us. Anthropic processes Gmail Import content under its Commercial Terms of Service, does not use it to train its models, and deletes it under its standard API retention period, except where it must keep it longer for legal or safety reasons.</p>
+    <p>Our infrastructure and processing providers (Supabase, Anthropic, RevenueCat, and the underlying cloud hosting) maintain SOC 2 Type II or equivalent independent security certifications and are bound by data processing agreements that limit use of your data to providing their service to us. Anthropic processes Gmail Import content under its Commercial Terms of Service, does not use it to train its models, and deletes it under its standard API retention period, except where it must keep it longer for legal or safety reasons.</p>
 
     <p class="label">Ongoing practices</p>
     <p>We keep software dependencies patched, review the data each feature collects before every release, and monitor for errors and anomalies. No method of transmission or storage is completely secure; if we become aware of a breach affecting your personal data, we will notify affected users and the relevant authorities as required by law.</p>
@@ -191,13 +191,14 @@
     </table>
 
     <h2 id="account-deletion">Account Deletion</h2>
-    <p>You may delete your account and all associated data at any time directly in the app (Profile &rarr; Delete Account). Deletion is permanent. Your account, trips, bookings, insurance details, and travel profile are removed from our live servers immediately. Copies may remain in our encrypted backups for up to 8 days until those backups are automatically deleted, as described below. After you delete your account, past usage analytics remain in PostHog under a random account ID, and error reports remain in Sentry under a random device ID, until their normal retention periods end; neither includes your name or email address. Our sign-in provider keeps a security log of sign-ins and account changes, including your email address and IP address, for up to 30 days. We also keep a deletion record with only the month, platform, and ranges for account age and number of trips, with no name, email address, or account ID. Deleting your account does not cancel a Roam Wyld Pro subscription. Cancel it first in your App Store or Google Play settings.</p>
+    <p>You may delete your account and all associated data at any time directly in the app (Profile &rarr; Delete Account). Deletion is permanent. Your account, trips, bookings, insurance details, and travel profile are removed from our live servers immediately. Copies may remain in our encrypted backups for up to 8 days until those backups are automatically deleted, as described below. After you delete your account, past usage analytics remain in PostHog under a random account ID, and error reports remain in Sentry under a random device ID, until their normal retention periods end; neither includes your name or email address. Our sign-in provider keeps a security log of sign-ins and account changes, including your email address and IP address, for up to 30 days. We also keep a deletion record with only the month, platform, and ranges for account age and number of trips, with no name, email address, or account ID. We also ask RevenueCat to delete your subscription records. Apple and Google keep their own purchase records under their own policies. Deleting your account does not cancel a Roam Wyld Pro subscription. Cancel it first in your App Store or Google Play settings.</p>
     <p>Backups. Once a day we make an encrypted backup of the app&rsquo;s database, including trips, bookings, travel profiles (passport nationality and home currency), insurance details, and travel companion display names, so we can recover from errors or data loss. Each backup is encrypted before it is stored, with a key that only Roam Wyld holds, and is deleted automatically 7 days after it is made. Because of this, anything you delete, or that we delete on schedule, may remain in a backup for up to 8 days. We use backups only to recover data lost through an error. We never use a backup to bring back a deleted account or anything you deleted.</p>
     <p>If you no longer have the app installed, you can request deletion by email instead. See <a href="delete-account.html">roamwyld.app/delete-account.html</a> for instructions.</p>
 
     <h2>Your Rights</h2>
     <ul>
       <li>Access or update your profile data in the app at any time.</li>
+      <li>Request a copy of, or a correction to, your data by emailing <a href="mailto:support@roamwyld.app">support@roamwyld.app</a>.</li>
       <li>Revoke Gmail access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
       <li>Delete your account and all associated data directly in the app, or request deletion by email (see <a href="delete-account.html">Delete your account</a>).</li>
       <li>Contact us with any privacy question or data request at <a href="mailto:support@roamwyld.app">support@roamwyld.app</a>.</li>
@@ -207,7 +208,7 @@
     <p>Roam Wyld is not directed at children under 13. We do not knowingly collect data from children under 13. If you believe a child under 13 has provided us with personal data, please contact us and we will delete it promptly.</p>
 
     <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy. If changes are material, we will notify you within the app or by email to the address associated with your account. Continued use after notification constitutes acceptance.</p>
+    <p>We may update this Privacy Policy. If changes are material, we will notify you within the app or by email to the address associated with your account. Changes required by law may take effect sooner. Continued use after notification constitutes acceptance.</p>
 
     <div class="contact">
       <div class="contact-label">Questions or Requests</div>
